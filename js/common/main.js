@@ -9,7 +9,8 @@ requirejs.config({
         bootstrap:'lib/bootstrap/js/bootstrap.min',
         //自己的加载路径
         userList:'js/user/list',
-        userProfile:'js/user/profile'
+        userProfile:'js/user/profile',
+        common:'js/common/common'
     },
     shim:{
         bootstrap:{
@@ -17,7 +18,7 @@ requirejs.config({
         }
     }
 });
-require(['jquery','bootstrap']);
+require(['jquery','bootstrap','common']);
 //这里获取页面的pathname，然后对应的加载js
 (function(window){
     var pathname = window.location.pathname;

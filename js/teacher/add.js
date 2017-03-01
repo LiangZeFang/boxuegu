@@ -1,6 +1,5 @@
-/**
- * Created by Administrator on 2017/2/25.
- */
-define(['jquery'], function($) {
-    console.log('6');
+define(['jquery', 'common', 'nprogress'], function($, undefined, nprogress) {
+
+    // 该页所有的js加载完毕，进度条结束。
+    nprogress.done();
 });
